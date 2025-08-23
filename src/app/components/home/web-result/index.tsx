@@ -29,7 +29,11 @@ function WebResult() {
   }, [])
 
   return (
+<<<<<<< HEAD
     <section id='aboutme'>
+=======
+    <section id='aboutus'>
+>>>>>>> e76dca0cd03223d242335fa10133fb2b83a75f44
       <div className='2xl:py-20 py-11'>
         <div className='container'>
           <div className='flex flex-col  lg:gap-16 gap-5'>
@@ -63,11 +67,15 @@ function WebResult() {
               <div className='relative 2xl:px-24 px-16 md:py-8 py-4'>
                 <h2 ref={ref} className='2xl:text-9xl md:text-7xl text-5xl'>
                   <sup>+</sup>
+<<<<<<< HEAD
                   {inView ? (
                     <CountUp start={0} end={40}>
                       {({ countUpRef }) => <span ref={countUpRef} />}
                     </CountUp>
                   ) : '0'}
+=======
+                  {inView ? <CountUp start={0} end={40} duration={3} /> : '0'}
+>>>>>>> e76dca0cd03223d242335fa10133fb2b83a75f44
                 </h2>
                 <p className='mt-2 text-dark_black/60 dark:text-white/60'>
                   Total Projects Completed
@@ -77,9 +85,13 @@ function WebResult() {
               <div className='relative 2xl:px-24 px-16 md:py-8 py-4'>
                 <h2 className='2xl:text-9xl md:text-7xl text-5xl'>
                   <sup>+</sup>
+<<<<<<< HEAD
                   {inView ? ( <CountUp start={0} end={15}>
                       {({ countUpRef }) => <span ref={countUpRef} />}
                     </CountUp> ) : '0'}
+=======
+                  {inView ? <CountUp start={0} end={15} duration={3} /> : '0'}
+>>>>>>> e76dca0cd03223d242335fa10133fb2b83a75f44
                 </h2>
                 <p className='mt-2 text-dark_black/60 dark:text-white/60'>
                   Years of Experience
@@ -89,11 +101,15 @@ function WebResult() {
               <div className='relative 2xl:px-24 px-16 md:py-8 py-4'>
                 <h2 className='2xl:text-9xl md:text-7xl text-5xl'>
                   <sup>+</sup>
+<<<<<<< HEAD
                   {inView ? (
                     <CountUp start={0} end={12}>
                       {({ countUpRef }) => <span ref={countUpRef} />}
                     </CountUp>
                   ) : '0'}
+=======
+                  {inView ? <CountUp start={0} end={12} duration={3} /> : '0'}
+>>>>>>> e76dca0cd03223d242335fa10133fb2b83a75f44
                 </h2>
                 <p className='mt-2 text-dark_black/60 dark:text-white/60'>
                   Design Awards
