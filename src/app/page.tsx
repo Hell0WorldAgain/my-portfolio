@@ -12,7 +12,7 @@ import Subscription from "./components/home/subscription";
 import WebResult from "./components/home/web-result";
 
 export const metadata: Metadata = {
-    title: "Custom Websites for Small Businesses | Nova Markup Web Designs | Starting at $150/M",
+    title: "Abhishek Choudhary - Portfolio",
 };
 
 

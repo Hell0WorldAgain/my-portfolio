@@ -96,3 +96,4 @@ function WebResult() {
     </section>
   )
 }
+export default WebResult
