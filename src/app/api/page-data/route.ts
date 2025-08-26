@@ -34,27 +34,62 @@ const brandList: brand[] = [
   {
     image: '/images/home/brand/brand-icon-1.svg',
     darkImg: '/images/home/brand/brand-darkicon-1.svg',
-    title: 'Adobe',
+    title: 'React JS',
   },
   {
     image: '/images/home/brand/brand-icon-2.svg',
     darkImg: '/images/home/brand/brand-darkicon-2.svg',
-    title: 'Figma',
+    title: 'Next JS',
   },
   {
     image: '/images/home/brand/brand-icon-3.svg',
     darkImg: '/images/home/brand/brand-darkicon-3.svg',
-    title: 'Shopify',
+    title: 'PHP',
   },
   {
     image: '/images/home/brand/brand-icon-4.svg',
     darkImg: '/images/home/brand/brand-darkicon-4.svg',
-    title: 'Dribble',
+    title: 'Tailwind CSS',
   },
   {
     image: '/images/home/brand/brand-icon-5.svg',
     darkImg: '/images/home/brand/brand-darkicon-5.svg',
-    title: 'Webflow',
+    title: 'JavaScript',
+  },
+  {
+    image: '/images/home/brand/brand-icon-6.svg',
+    darkImg: '/images/home/brand/brand-darkicon-6.svg',
+    title: 'TypeScript',
+  },
+  {
+    image: '/images/home/brand/brand-icon-7.svg',
+    darkImg: '/images/home/brand/brand-darkicon-7.svg',
+    title: 'GitHub',
+  },
+  {
+    image: '/images/home/brand/brand-icon-8.svg',
+    darkImg: '/images/home/brand/brand-darkicon-8.svg',
+    title: 'AWS',
+  },
+  {
+    image: '/images/home/brand/brand-icon-9.svg',
+    darkImg: '/images/home/brand/brand-darkicon-9.svg',
+    title: 'HTML',
+  },
+  {
+    image: '/images/home/brand/brand-icon-10.svg',
+    darkImg: '/images/home/brand/brand-darkicon-10.svg',
+    title: 'CSS',
+  },
+  {
+    image: '/images/home/brand/brand-icon-11.svg',
+    darkImg: '/images/home/brand/brand-darkicon-11.svg',
+    title: 'Shopify',
+  },
+  {
+    image: '/images/home/brand/brand-icon-12.svg',
+    darkImg: '/images/home/brand/brand-darkicon-12.svg',
+    title: 'WordPress',
   },
 ]
 

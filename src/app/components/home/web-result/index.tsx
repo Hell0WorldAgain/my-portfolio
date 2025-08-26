@@ -35,8 +35,7 @@ function WebResult() {
           <div className='flex flex-col  lg:gap-16 gap-5'>
             <div className='flex flex-col items-center justify-center text-center gap-3'>
               <h2 className='max-w-6xl'>
-                Crafting exceptional, well experienced & technology driven
-                strategies to drive impactful results with
+                For me, development is more than writing code, it’s about creating meaningful, user-first solutions that solve real problems and inspire interaction.
               </h2>
               <div>
                 <h2>
@@ -73,7 +72,7 @@ function WebResult() {
               <div className='relative 2xl:px-24 px-16 md:py-8 py-4'>
                 <h2 className='2xl:text-9xl md:text-7xl text-5xl'>
                   <sup>+</sup>
-                  {inView ? <CountUp start={0} end={15} duration={3} /> : '0'}
+                  {inView ? <CountUp start={0} end={5} duration={3} /> : '0'}
                 </h2>
                 <p className='mt-2 text-dark_black/60 dark:text-white/60'>
                   Years of Experience
@@ -83,10 +82,10 @@ function WebResult() {
               <div className='relative 2xl:px-24 px-16 md:py-8 py-4'>
                 <h2 className='2xl:text-9xl md:text-7xl text-5xl'>
                   <sup>+</sup>
-                  {inView ? <CountUp start={0} end={12} duration={3} /> : '0'}
+                  {inView ? <CountUp start={0} end={20} duration={3} /> : '0'}
                 </h2>
                 <p className='mt-2 text-dark_black/60 dark:text-white/60'>
-                  Design Awards
+                  Personal Projects
                 </p>
               </div>
             </div>

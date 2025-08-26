@@ -63,7 +63,7 @@ const Header = () => {
               <Link
                 href={'/contact'}
                 className='hidden lg:block bg-transparent border border-dark_black dark:border-white/50 text-primary px-2.5 xl:px-4 py-2 rounded-full hover:bg-dark_black hover:text-white'>
-                Contact
+                Contact Me
               </Link>
 
               {/* ---------------------Light/Dark Mode button-------------------- */}

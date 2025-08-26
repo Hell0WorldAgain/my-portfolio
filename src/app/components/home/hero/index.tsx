@@ -40,22 +40,22 @@ function HeroSection() {
               {...bottomAnimation}
               className='relative flex flex-col text-center items-center gap-4'>
               <h1 className='font-medium w-full'>
-                Custom Websites for 
+                I'm Abhishek Choudhary, <br/>
                 <span className='instrument-font italic font-normal dark:text-white/70'>
                   {' '}
-                  Small Businesses
+                  a Frotned Developer
                 </span>
               </h1>
               <p className='max-w-38 text-dark_black/60 dark:text-white/60'>
-                We work with early-stage businesses at Nova Markup, delivering focused solutions that turn big challenges into real opportunities, every step from strategy to success.</p>
+                with a knack for clean code and intuitive design, dedicated to building fast and engaging digital experiences. Always exploring, learning, and pushing the web forward.</p>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               {...bottomAnimation}
               className='flex flex-col items-center justify-center gap-4'>
-              <div className='flex flex-col items-center justify-center gap-8 w-full sm:flex-row'>
+              <div className='flex flex-col items-center justify-center gap-8 w-full sm:flex-row'> */}
                 {/* ----------- Get started Link -------------- */}
-                <Link
+                {/* <Link
                   href='/contact'
                   className='group bg-purple_blue text-white font-medium flex flex-row justify-between items-center py-2 px-5 rounded-full max-w-64 w-full md:py-3 border border-purple_blue transition-all duration-200 ease-in-out hover:bg-transparent hover:text-purple_blue'>
                   <span className='flex text-start transform transition-transform duration-200 ease-in-out group-hover:translate-x-28'>
@@ -89,10 +89,10 @@ function HeroSection() {
                       strokeLinejoin='round'
                     />
                   </svg>
-                </Link>
+                </Link> */}
 
                 {/* --------------- avatar division -------------- */}
-                <div className='flex items-center gap-7'>
+                {/* <div className='flex items-center gap-7'>
                   <ul className='avatar flex flex-row items-center'>
                     {avatarList?.avatarList?.map((items:any, index:any) => (
                       <li key={index} className='-mr-2 z-1 avatar-hover:ml-2'>
@@ -107,9 +107,9 @@ function HeroSection() {
                         />
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                   {/* -------------- Star rating division --------------- */}
-                  <div className='gap-1 flex flex-col'>
+                  {/* <div className='gap-1 flex flex-col'>
                     <div>
                       <StarRating count={4} color='#F59E0B' />
                     </div>
@@ -119,7 +119,7 @@ function HeroSection() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>
