@@ -27,13 +27,13 @@ export default function Home() {
       <Brand />
       {/* ---------------------Brand logo section Ends-----------------  */}
 
-      {/* ---------------------Web result section Starts-----------------  */}
-      <WebResult />
-      {/* ---------------------Web result section Ends-----------------  */}
-
       {/* ---------------------Innovation section Starts-----------------  */}
       <Innovation />
       {/* ---------------------Innovation section Ends-----------------  */}
+      
+      {/* ---------------------Web result section Starts-----------------  */}
+      <WebResult />
+      {/* ---------------------Web result section Ends-----------------  */}
 
       {/* ---------------------Online presence section Starts-----------------  */}
       <OnlinePresence />

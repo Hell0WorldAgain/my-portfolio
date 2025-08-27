@@ -96,13 +96,13 @@ const brandList: brand[] = [
 const innovationList: innovation[] = [
   {
     image: '/images/home/innovation/brand.svg',
-    title: 'Brand\nStrategy',
+    title: 'Frontend\nDevelopment',
     bg_color: 'bg-purple/20',
     txt_color: 'text-purple',
   },
   {
     image: '/images/home/innovation/digitalmarketing.svg',
-    title: 'Digital\nMarketing',
+    title: 'Tools &\nWorkflow',
     bg_color: 'bg-blue/20',
     txt_color: 'text-blue',
   },
@@ -114,7 +114,7 @@ const innovationList: innovation[] = [
   },
   {
     image: '/images/home/innovation/analitics.svg',
-    title: 'Analytics &\nReporting',
+    title: 'Performance &\nOptimization',
     bg_color: 'bg-green/20',
     txt_color: 'text-green',
   },

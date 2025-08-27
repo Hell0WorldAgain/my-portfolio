@@ -27,12 +27,12 @@ function OnlinePresence() {
       <div className='2xl:py-20 py-11'>
         <div className='container'>
           <div className='flex flex-col justify-center items-center gap-10 md:gap-20'>
-            <div className='max-w-2xl text-center'>
+            <div className='max-w-xl text-center'>
               <h2>
-                How we transformed a small business’s
+                Building dynamic, scalable 
                 <span className='instrument-font italic font-normal dark:text-white/70'>
                   {' '}
-                  online presence
+                  web experiences
                 </span>
               </h2>
             </div>

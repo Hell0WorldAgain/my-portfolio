@@ -38,11 +38,11 @@ function Innovation() {
             <div className='flex flex-col justify-center items-center gap-10 lg:gap-16'>
               <motion.div
                 {...bottomAnimation(1)}
-                className='max-w-(--breakpoint-Xsm) text-center'>
+                className='max-w-(--breakpoint-md) text-center'>
                 <h2>
-                  Where innovation meets{' '}
+                  Crafting sleek, responsive, and user-centric{' '}
                   <span className='instrument-font italic font-normal dark:text-white/70'>
-                    aesthetics
+                    web experiences
                   </span>
                 </h2>
               </motion.div>
@@ -81,11 +81,10 @@ function Innovation() {
               {...bottomAnimation(3)}
               className='flex flex-col gap-4 xl:flex xl:flex-row bg-dark_black items-center justify-between dark:bg-white/5 py-8 px-7 sm:px-12 rounded-3xl w-full'>
               <h4 className='text-white text-center xl:text-left'>
-                See Our Work in Action.
-                <br /> Start Your Creative Journey with Us!
+                See my Work in Action.
               </h4>
               <div className='flex flex-col sm:flex-row gap-3 items-center'>
-                <Link
+                {/* <Link
                   href='/contact'
                   className='group gap-2 text-dark_black font-medium bg-white rounded-full flex items-center lg:gap-4 py-2 pl-5 pr-2 border border-white dark:border-opacity-50 hover:bg-transparent hover:text-white transition-all duration-200 ease-in-out'>
                   <span className='group-hover:translate-x-9 transform transition-transform duration-200 ease-in-out'>
@@ -114,7 +113,7 @@ function Innovation() {
                       className='group-hover:stroke-black'
                     />
                   </svg>
-                </Link>
+                </Link> */}
                 <Link
                   href='/#work'
                   className='group border border-white dark:border-white/50 text-white font-medium bg-dark_black gap-2 rounded-full flex items-center justify-between lg:gap-4 py-2 pl-5 pr-2 hover:opacity-95 hover:bg-transparent hover:text-white transition-all duration-200 ease-in-out'>
