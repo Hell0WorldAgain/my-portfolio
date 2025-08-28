@@ -129,27 +129,27 @@ const innovationList: innovation[] = [
 const onlinePresenceList: onlinePresence[] = [
   {
     image: '/images/home/onlinePresence/online_img_1.jpg',
-    title: 'FlowBank',
+    title: 'IndiqueHair',
     tag: ['UX Research', 'Interface Design'],
-    link: 'https://www.wrappixel.com/',
+    link: '#',
   },
   {
     image: '/images/home/onlinePresence/online_img_2.jpg',
-    title: 'Academy.co',
-    tag: ['Product Design', 'Interaction Design'],
-    link: 'https://www.wrappixel.com/',
+    title: 'Mom & Paw',
+    tag: ['Dashboard Design', 'API Integration'],
+    link: '#',
   },
   {
-    image: '/images/home/onlinePresence/online_img_3.jpg',
-    title: 'Genome',
-    tag: ['Brand identity design', 'UX Research'],
-    link: 'https://www.wrappixel.com/',
+    image: '/images/home/onlinePresence/online_img_3.png',
+    title: 'Main Hardware',
+    tag: ['E-commerce Development', 'PDP Design'],
+    link: '#',
   },
   {
-    image: '/images/home/onlinePresence/online_img_4.jpg',
-    title: 'Hotto',
-    tag: ['Visual Storytelling', 'Web & Mobile Design'],
-    link: 'https://www.wrappixel.com/',
+    image: '/images/home/onlinePresence/online_img_4.png',
+    title: 'Hostbooksś',
+    tag: ['UX Research', 'Modern Tools Implementation'],
+    link: '#',
   },
 ]
 
