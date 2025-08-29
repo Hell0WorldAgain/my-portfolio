@@ -27,6 +27,10 @@ export default function Home() {
       <Brand />
       {/* ---------------------Brand logo section Ends-----------------  */}
 
+        {/* ---------------------Creative mind section Starts-----------------  */}
+      <CreativeMind />
+      {/* ---------------------Creative mind section Ends-----------------  */}
+
       {/* ---------------------Innovation section Starts-----------------  */}
       <Innovation />
       {/* ---------------------Innovation section Ends-----------------  */}
@@ -39,17 +43,13 @@ export default function Home() {
       <OnlinePresence />
       {/* ---------------------Online presence section Ends-----------------  */}
 
-      {/* ---------------------Creative mind section Starts-----------------  */}
-      <CreativeMind />
-      {/* ---------------------Creative mind section Ends-----------------  */}
-
-      {/* ---------------------Customer Stories section Starts-----------------  */}
+      {/* ---------------------Tech Stacks section Starts-----------------  */}
       <CustomerStories />
-      {/* ---------------------Customer Stories section Ends-----------------  */}
+      {/* ---------------------Tech Stacks section Ends-----------------  */}
 
-      {/* ---------------------Subscription section Starts-----------------  */}
+      {/* ---------------------Education section Starts-----------------  */}
       <Subscription />
-      {/* ---------------------Subscription section Ends-----------------  */}
+      {/* ---------------------Education section Ends-----------------  */}
 
       {/* ---------------------Faq section Starts-----------------  */}
       <Faq />

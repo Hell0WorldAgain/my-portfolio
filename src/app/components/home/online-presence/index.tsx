@@ -54,7 +54,7 @@ function OnlinePresence() {
 
                       {/* Overlay div */}
                       <Link
-                        href={'https://www.framer.com/@wrap-pixel/'}
+                        href={'https://www.linkedin.com/in/abhishek-choudhary-a63a40169/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BJUbcIuJITdezxLO%2BntFmhQ%3D%3D'}
                         target='blank'
                         className='absolute top-0 left-0 bg-black/50 w-full h-full rounded-2xl hidden group-hover:flex'>
                         <span className='flex justify-end p-5 w-full'>
