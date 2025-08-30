@@ -80,7 +80,7 @@ const innovationList: innovation[] = [
   },
   {
     image: '/images/home/innovation/digitalmarketing.svg',
-    title: 'Tools &\nWorkflow',
+    title: 'Web &\nDevelopment',
     bg_color: 'bg-blue/20',
     txt_color: 'text-blue',
   },
@@ -98,7 +98,7 @@ const innovationList: innovation[] = [
   },
   {
     image: '/images/home/innovation/webdevp.svg',
-    title: 'Web\nDevelopment',
+    title: 'Tools\nWorkflow',
     bg_color: 'bg-pink/20',
     txt_color: 'text-pink',
   },
@@ -242,23 +242,23 @@ const techStackList: techStack[] = [
 
 const educationsList: educations[] = [
   {
-    icon: '/images/home/achievement/framer_award.svg',
-    dark_icon: '/images/home/achievement/dark_framer_award.svg',
+    icon: '/images/home/education/college.svg',
+    dark_icon: '/images/home/education/college-dark.svg',
     sub_title: 'Pondicherry University, Puducherry, India',
     title:
       'MBA (Information Technology)',
     year: '2022',
   },
   {
-    icon: '/images/home/achievement/dribble_award.svg',
-    dark_icon: '/images/home/achievement/dribble_award.svg',
+    icon: '/images/home/education/college.svg',
+    dark_icon: '/images/home/education/college-dark.svg',
     sub_title: 'Patna University, Bihar, India',
     title: 'BCA (Computer Science)',
     year: '2018',
   },
   {
-    icon: '/images/home/achievement/awward_award.svg',
-    dark_icon: '/images/home/achievement/dark_awward_award.svg',
+    icon: '/images/home/education/college.svg',
+    dark_icon: '/images/home/education/college-dark.svg',
     sub_title: 'State Board of Bihar, India',
     title:
       'Higher & Senior Secondary',

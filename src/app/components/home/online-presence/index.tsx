@@ -29,10 +29,10 @@ function OnlinePresence() {
           <div className='flex flex-col justify-center items-center gap-10 md:gap-20'>
             <div className='max-w-xl text-center'>
               <h2>
-                Building dynamic, scalable 
+                My 
                 <span className='instrument-font italic font-normal dark:text-white/70'>
                   {' '}
-                  software experiencess
+                  Projects
                 </span>
               </h2>
             </div>
