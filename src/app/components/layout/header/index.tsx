@@ -33,7 +33,7 @@ const Header = () => {
             <div className='flex items-center gap-1 xl:gap-4'>
               <a
                 href='/cv.pdf'
-                  download target="_blank"
+                   target="_blank"
                   rel="noopener noreferrer"
                 className='hidden lg:block bg-transparent border border-dark_black dark:border-white/50 text-primary px-2.5 xl:px-4 py-2 rounded-full hover:bg-dark_black hover:text-white'>
                 Download My CV
@@ -104,7 +104,7 @@ const Header = () => {
               <div className='flex flex-col items-center gap-3 px-2 mt-2'>
                 <a
                       href='/cv.pdf'
-                      download target="_blank"
+                       target="_blank"
                   rel="noopener noreferrer"
                       className='w-full text-white dark:text-dark_black px-4 py-2 bg-dark_black dark:bg-white rounded-md hover:opacity-90'>
                       Download My CV
