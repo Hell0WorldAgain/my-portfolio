@@ -26,7 +26,7 @@ const [AboutMe, setAboutMe] = useState<any>(null);
                 <motion.div
                   {...bottomAnimation(0)} className="relative"> 
                    <img
-                    src="/images/home/creative/abhi-with-srk.png"
+                    src="/images/home/abhi-with-srk.png"
                     alt="Bio Image"
                     className="w-md object-cover rounded-2xl"
                     />

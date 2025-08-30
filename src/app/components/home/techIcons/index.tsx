@@ -1,10 +1,10 @@
 'use client'
 import Slider from 'react-infinite-logo-slider'
-import SingleBrand from './SingleBrand'
+import SingleTech from './SingleTech'
 import { useEffect, useState } from 'react';
 
-function Brand() {
-  const [brandList, setbrandList] = useState<any>(null);
+function TechIcon() {
+  const [techIconList, settechIconList] = useState<any>(null);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -12,7 +12,7 @@ function Brand() {
         if (!res.ok) throw new Error('Failed to fetch')
 
         const data = await res.json()
-        setbrandList(data?.brandList || [])
+        settechIconList(data?.techIconList || [])
       } catch (error) {
         console.error('Error fetching services:', error)
       }
@@ -33,15 +33,15 @@ function Brand() {
               </p>
             </div>
 
-            {brandList && brandList.length > 0 && (
+            {techIconList && techIconList.length > 0 && (
               <div className='py-3 Xsm:py-7'>
                 <Slider
                   width='200px'
                   duration={20}
                   pauseOnHover={true}
                   blurBorders={false}>
-                  {brandList?.map((items: any, index: any) => (
-                    <SingleBrand key={index} brand={items} />
+                  {techIconList?.map((items: any, index: any) => (
+                    <SingleTech key={index} techIcons={items} />
                   ))}
                 </Slider>
               </div>
@@ -53,4 +53,4 @@ function Brand() {
   )
 }
 
-export default Brand
+export default TechIcon

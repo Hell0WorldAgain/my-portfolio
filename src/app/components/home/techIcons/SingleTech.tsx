@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Slider from 'react-infinite-logo-slider'
 
-const SingleBrand = ({ brand }: { brand: any }) => {
-  const { image, title, darkImg } = brand
+const SingleTech = ({ techIcons }: { techIcons: any }) => {
+  const { image, title, darkImg } = techIcons
 
   return (
     <Slider.Slide>
@@ -26,4 +26,4 @@ const SingleBrand = ({ brand }: { brand: any }) => {
   )
 }
 
-export default SingleBrand
+export default SingleTech

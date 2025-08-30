@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
-function Solutions() {
+function Collaborate() {
   const ref = useRef(null)
   const inView = useInView(ref)
 
@@ -25,22 +25,23 @@ function Solutions() {
               className='flex flex-col gap-6 items-center md:max-w-3xl mx-auto'>
               <div className='flex flex-col gap-3 items-center text-center'>
                 <h2 className='text-3xl md:text-5xl dark:text-dark_black'>
-                  Innovative Solutions for{' '}
+                  Have something{' '}
                   <span className='instrument-font italic font-normal dark:text-black/70'>
-                    Bold Brands
+                    in Mind?
                   </span>
                 </h2>
                 <p className='dark:text-dark_black'>
-                  Looking to elevate your brand? We craft immersive experiences
-                  that captivate, engage, and make your business unforgettable
-                  in every interaction.
+                  I’m always open to exciting opportunities, collaborations, 
+                  or just connecting with like-minded professionals. Whether you’re 
+                  looking to hire a frontend developer, discuss a project idea, 
+                  or simply exchange insights, I’d love to hear from you.
                 </p>
               </div>
               <Link
                 href='/contact'
                 className='group w-fit text-white font-medium bg-dark_black rounded-full flex items-center gap-4 py-2 pl-5 pr-2 hover:bg-transparent border border-dark_black'>
                 <span className='group-hover:translate-x-9 group-hover:text-dark_black transform transition-transform duration-200 ease-in-out'>
-                  Let’s Collaborate
+                  Let’s Connect
                 </span>
                 <svg
                   width='32'
@@ -74,4 +75,4 @@ function Solutions() {
   )
 }
 
-export default Solutions
+export default Collaborate

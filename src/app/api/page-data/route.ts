@@ -1,93 +1,72 @@
 import { NextResponse } from 'next/server'
 import {
-  avatar,
-  brand,
+  techIcon,
   innovation,
   onlinePresence,
   WebResultTag,
-  startupPlan,
-  faq,
+  techStack,
   achievements,
 } from '@/app/types/menu'
 
-const avatarList: avatar[] = [
+const techIconList: techIcon[] = [
   {
-    image: '/images/home/avatar_1.jpg',
-    title: 'Sarah Johnson',
-  },
-  {
-    image: '/images/home/avatar_2.jpg',
-    title: 'Olivia Miller',
-  },
-  {
-    image: '/images/home/avatar_3.jpg',
-    title: 'Sophia Roberts',
-  },
-  {
-    image: '/images/home/avatar_4.jpg',
-    title: 'Isabella Clark',
-  },
-]
-
-const brandList: brand[] = [
-  {
-    image: '/images/home/brand/brand-icon-1.svg',
-    darkImg: '/images/home/brand/brand-darkicon-1.svg',
+    image: '/images/home/techIcons/reactjs.svg',
+    darkImg: '/images/home/techIcons/reactjs-darkicon.svg',
     title: 'React JS',
   },
   {
-    image: '/images/home/brand/brand-icon-2.svg',
-    darkImg: '/images/home/brand/brand-darkicon-2.svg',
+    image: '/images/home/techIcons/nextjs.svg',
+    darkImg: '/images/home/techIcons/nextjs-darkicon.svg',
     title: 'Next JS',
   },
   {
-    image: '/images/home/brand/brand-icon-3.svg',
-    darkImg: '/images/home/brand/brand-darkicon-3.svg',
+    image: '/images/home/techIcons/php.svg',
+    darkImg: '/images/home/techIcons/php-darkicon.svg',
     title: 'PHP',
   },
   {
-    image: '/images/home/brand/brand-icon-4.svg',
-    darkImg: '/images/home/brand/brand-darkicon-4.svg',
+    image: '/images/home/techIcons/tailwind.svg',
+    darkImg: '/images/home/techIcons/tailwind-darkicon.svg',
     title: 'Tailwind CSS',
   },
   {
-    image: '/images/home/brand/brand-icon-5.svg',
-    darkImg: '/images/home/brand/brand-darkicon-5.svg',
+    image: '/images/home/techIcons/javascript.svg',
+    darkImg: '/images/home/techIcons/javascript-darkicon.svg',
     title: 'JavaScript',
   },
   {
-    image: '/images/home/brand/brand-icon-6.svg',
-    darkImg: '/images/home/brand/brand-darkicon-6.svg',
+    image: '/images/home/techIcons/typescript.svg',
+    darkImg: '/images/home/techIcons/typescript-darkicon.svg',
     title: 'TypeScript',
   },
   {
-    image: '/images/home/brand/brand-icon-7.svg',
-    darkImg: '/images/home/brand/brand-darkicon-7.svg',
+    image: '/images/home/techIcons/github.svg',
+    darkImg: '/images/home/techIcons/github-darkicon.svg',
     title: 'GitHub',
   },
   {
-    image: '/images/home/brand/brand-icon-8.svg',
-    darkImg: '/images/home/brand/brand-darkicon-8.svg',
+    image: '/images/home/techIcons/aws.svg',
+    darkImg: '/images/home/techIcons/aws-darkicon.svg',
     title: 'AWS',
   },
   {
-    image: '/images/home/brand/brand-icon-9.svg',
-    darkImg: '/images/home/brand/brand-darkicon-9.svg',
+    image: '/images/home/techIcons/html.svg',
+    darkImg: '/images/home/techIcons/html-darkicon.svg',
     title: 'HTML',
   },
   {
-    image: '/images/home/brand/brand-icon-10.svg',
-    darkImg: '/images/home/brand/brand-darkicon-10.svg',
+    image: '/images/home/techIcons/css.svg',
+    darkImg: '/images/home/techIcons/css-darkicon.svg',
     title: 'CSS',
   },
   {
-    image: '/images/home/brand/brand-icon-11.svg',
-    darkImg: '/images/home/brand/brand-darkicon-11.svg',
+    image: '/images/home/techIcons/shopify.svg',
+    darkImg: '/images/home/techIcons/shopify-darkicon.svg',
     title: 'Shopify',
   },
   {
-    image: '/images/home/brand/brand-icon-12.svg',
-    darkImg: '/images/home/brand/brand-darkicon-12.svg',
+    image: '/images/home/techIcons/wordpress.svg',
+    darkImg: '/images/home/techIcons/wordpress-darkicon.svg',
     title: 'WordPress',
   },
 ]
@@ -130,25 +109,25 @@ const onlinePresenceList: onlinePresence[] = [
     image: '/images/home/onlinePresence/online_img_1.png',
     title: 'IndiqueHair',
     tag: ['UX Research', 'Interface Design'],
-    link: '#',
+    link: '',
   },
   {
     image: '/images/home/onlinePresence/online_img_2.jpg',
     title: 'Mom & Paw',
     tag: ['Dashboard Design', 'API Integration'],
-    link: '#',
+    link: '',
   },
   {
     image: '/images/home/onlinePresence/online_img_3.png',
     title: 'Main Hardware',
     tag: ['E-commerce Development', 'PDP Design'],
-    link: '#',
+    link: '',
   },
   {
     image: '/images/home/onlinePresence/online_img_4.png',
     title: 'Hostbooks',
     tag: ['UX Research', 'Modern Tools Implementation'],
-    link: '#',
+    link: '',
   },
 ]
 
@@ -173,75 +152,66 @@ const WebResultTagList: WebResultTag[] = [
   },
 ]
 
-const startupPlanList: startupPlan[] = [
+const techStackList: techStack[] = [
   {
-    plan_bg_color: 'bg-pale-yellow',
-    text_color: 'text-dark_black',
-    descp_color: 'dark_black/60',
-    border_color: 'border-dark_black/10',
-    plan_name: 'Starter',
-    plan_descp: 'For companies who need design support. One request at a time',
-    plan_price: '$2500',
-    icon_img: '/images/home/startupPlan/white_tick.svg',
-    plan_feature: [
-      'Design Updates Every 2 Days',
-      'Mid-level Designer',
-      'SEO optimization',
-      'Monthly analytics',
-      '2x Calls Per Month',
-      'License free assets',
-    ],
+    image: '/images/home/techStack/reactjs.svg',
+    darkImg: '/images/home/techStack/reactjs-darkicon.svg',
+    title: 'React JS',
   },
   {
-    plan_bg_color: 'bg-purple_blue',
-    text_color: 'text-white',
-    descp_color: 'white/60',
-    border_color: 'border-white/10',
-    plan_name: 'Pro',
-    plan_descp: '2x the speed. Great for an MVP, Web App or complex problem',
-    plan_price: '$3800',
-    icon_img: '/images/home/startupPlan/black_tick.svg',
-    plan_feature: [
-      'Design Updates Daily',
-      'Senior-level Designer',
-      'AI Advisory Framework',
-      'Full-service Creative Team',
-      '4x Calls Per Month',
-      'License free assets',
-    ],
-  },
-]
-
-const faqList: faq[] = [
-  {
-    faq_que: 'What services does Awake Agency offer?',
-    faq_ans:
-      'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.',
+    image: '/images/home/techStack/nextjs.svg',
+    darkImg: '/images/home/techStack/nextjs-darkicon.svg',
+    title: 'Next JS',
   },
   {
-    faq_que: 'How long does a typical project take?',
-    faq_ans:
-      'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.',
+    image: '/images/home/techStack/php.svg',
+    darkImg: '/images/home/techStack/php-darkicon.svg',
+    title: 'PHP',
   },
   {
-    faq_que: 'How is pricing structured at Awake Agency?',
-    faq_ans:
-      'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.',
+    image: '/images/home/techStack/tailwind.svg',
+    darkImg: '/images/home/techStack/tailwind-darkicon.svg',
+    title: 'Tailwind CSS',
   },
   {
-    faq_que: 'Do you offer ongoing support after project completion?',
-    faq_ans:
-      'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.',
+    image: '/images/home/techStack/javascript.svg',
+    darkImg: '/images/home/techStack/javascript-darkicon.svg',
+    title: 'JavaScript',
   },
   {
-    faq_que: 'How often will I receive updates on my project?',
-    faq_ans:
-      'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.',
+    image: '/images/home/techStack/typescript.svg',
+    darkImg: '/images/home/techStack/typescript-darkicon.svg',
+    title: 'TypeScript',
   },
   {
-    faq_que: 'How often will I receive updates on my project?',
-    faq_ans:
-      'Yes, we provide post-launch support to ensure smooth implementation and offer ongoing maintenance packages for clients needing regular updates or technical assistance.',
+    image: '/images/home/techStack/github.svg',
+    darkImg: '/images/home/techStack/github-darkicon.svg',
+    title: 'GitHub',
+  },
+  {
+    image: '/images/home/techStack/aws.svg',
+    darkImg: '/images/home/techStack/aws-darkicon.svg',
+    title: 'AWS',
+  },
+  {
+    image: '/images/home/techStack/html.svg',
+    darkImg: '/images/home/techStack/html-darkicon.svg',
+    title: 'HTML',
+  },
+  {
+    image: '/images/home/techStack/css.svg',
+    darkImg: '/images/home/techStack/css-darkicon.svg',
+    title: 'CSS',
+  },
+  {
+    image: '/images/home/techStack/shopify.svg',
+    darkImg: '/images/home/techStack/shopify-darkicon.svg',
+    title: 'Shopify',
+  },
+  {
+    image: '/images/home/techStack/wordpress.svg',
+    darkImg: '/images/home/techStack/wordpress-darkicon.svg',
+    title: 'WordPress',
   },
 ]
 
@@ -277,13 +247,11 @@ const achievementsList: achievements[] = [
 
 export const GET = async () => {
   return NextResponse.json({
-    avatarList,
-    brandList,
+    techIconList,
     innovationList,
     onlinePresenceList,
     WebResultTagList,
-    startupPlanList,
-    faqList,
+    techStackList,
     achievementsList,
   });
 };

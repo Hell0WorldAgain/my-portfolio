@@ -1,15 +1,15 @@
 import { Metadata } from "next";
 import Achievements from "./components/home/achievements";
-import Brand from "./components/home/brand";
+import Brand from "./components/home/techIcons";
 import AboutMe from "./components/home/about-me";
-import CustomerStories from "./components/home/customer-stories";
-import Faq from "./components/home/faq";
 import HeroSection from "./components/home/hero";
 import Innovation from "./components/home/innovation";
 import OnlinePresence from "./components/home/online-presence";
-import Solutions from "./components/home/solution";
-import Subscription from "./components/home/subscription";
+import Collaborate from "./components/home/solution";
+import Subscription from "./components/home/tech-stacks";
 import WebResult from "./components/home/web-result";
+import TechIcon from "./components/home/techIcons";
+import TechStack from "./components/home/tech-stacks";
 
 export const metadata: Metadata = {
     title: "Abhishek Choudhary - Portfolio",
@@ -24,10 +24,10 @@ export default function Home() {
       {/* ---------------------Hero section Ends-----------------  */}
 
       {/* ---------------------Brand logo section Starts-----------------  */}
-      <Brand />
+      <TechIcon />
       {/* ---------------------Brand logo section Ends-----------------  */}
 
-        {/* ---------------------Creative mind section Starts-----------------  */}
+      {/* ---------------------Creative mind section Starts-----------------  */}
       <AboutMe />
       {/* ---------------------Creative mind section Ends-----------------  */}
 
@@ -43,25 +43,17 @@ export default function Home() {
       <OnlinePresence />
       {/* ---------------------Online presence section Ends-----------------  */}
 
-      {/* ---------------------Tech Stacks section Starts-----------------  */}
-      <CustomerStories />
-      {/* ---------------------Tech Stacks section Ends-----------------  */}
-
       {/* ---------------------Education section Starts-----------------  */}
-      <Subscription />
+      <TechStack />
       {/* ---------------------Education section Ends-----------------  */}
-
-      {/* ---------------------Faq section Starts-----------------  */}
-      <Faq />
-      {/* ---------------------Faq section Ends-----------------  */}
 
       {/* ---------------------Achievements section Starts-----------------  */}
       <Achievements />
       {/* ---------------------Achievements section Ends-----------------  */}
 
-      {/* ---------------------Solutions section Starts-----------------  */}
-      <Solutions />
-      {/* ---------------------Solutions section Ends-----------------  */}
+      {/* ---------------------Connect section Starts-----------------  */}
+      <Collaborate />
+      {/* ---------------------Connect section Ends-----------------  */}
     </main>
   )
 }
