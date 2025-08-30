@@ -1,15 +1,13 @@
 import { Metadata } from "next";
-import Achievements from "./components/home/achievements";
-import Brand from "./components/home/techIcons";
 import AboutMe from "./components/home/about-me";
 import HeroSection from "./components/home/hero";
 import Innovation from "./components/home/innovation";
 import OnlinePresence from "./components/home/online-presence";
 import Collaborate from "./components/home/solution";
-import Subscription from "./components/home/tech-stacks";
 import WebResult from "./components/home/web-result";
 import TechIcon from "./components/home/techIcons";
 import TechStack from "./components/home/tech-stacks";
+import Educations from "./components/home/education";
 
 export const metadata: Metadata = {
     title: "Abhishek Choudhary - Portfolio",
@@ -48,7 +46,7 @@ export default function Home() {
       {/* ---------------------Education section Ends-----------------  */}
 
       {/* ---------------------Achievements section Starts-----------------  */}
-      <Achievements />
+      <Educations />
       {/* ---------------------Achievements section Ends-----------------  */}
 
       {/* ---------------------Connect section Starts-----------------  */}

@@ -1,5 +1,5 @@
 'use client'
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 
@@ -7,7 +7,6 @@ import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 function AboutMe() {
 const ref = useRef<HTMLDivElement>(null);
 const isInView = useInView(ref, { once: true });
-const [AboutMe, setAboutMe] = useState<any>(null);
 
   const bottomAnimation = (index: number) => ({
     initial: { y: '20%', opacity: 0 },
@@ -16,13 +15,11 @@ const [AboutMe, setAboutMe] = useState<any>(null);
   })
 
   return(
-    
     <section id='about-me'>
       <div ref={ref} className='2xl:py-20 py-11'>
         <div className='container'>
-          <div className='flex flex-col justify-center items-center gap-10 md:gap-20'>
-            <div className='grid md:grid-cols-2 gap-x-6 gap-y-8'>
-              <div className='group flex items-center flex-col gap-6'>
+            <div className='grid md:grid-cols-2 gap-x-6 gap-y-8 justify-center'>
+              <div className='flex items-center flex-col gap-6'>
                 <motion.div
                   {...bottomAnimation(0)} className="relative"> 
                    <img
@@ -54,7 +51,6 @@ const [AboutMe, setAboutMe] = useState<any>(null);
             </div>
           </div>
         </div>
-      </div>
     </section>
   )
 

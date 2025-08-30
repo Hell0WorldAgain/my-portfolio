@@ -1,12 +1,12 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
-import SingleAchievement from './SingleAchievement'
+import SingleEducation from './SingleEducation'
 
-function Achievements() {
+function Educations() {
 const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref)
-  const [achievementsList, setAchievementsList] = useState<any>(null);
+  const [educationsList, seteducationsList] = useState<any>(null);
 
   useEffect(() => {
       const fetchData = async () => {
@@ -15,7 +15,7 @@ const ref = useRef<HTMLDivElement>(null)
           if (!res.ok) throw new Error('Failed to fetch')
   
           const data = await res.json()
-          setAchievementsList(data?.achievementsList)
+          seteducationsList(data?.educationsList)
         } catch (error) {
           console.error('Error fetching services:', error)
         }
@@ -37,17 +37,17 @@ const ref = useRef<HTMLDivElement>(null)
           <div className='flex flex-col gap-10 md:gap-20'>
             <div className='max-w-3xl text-center mx-auto'>
               <h2>
-                Accolades and achievements celebration our{' '}
+                My {' '}
                 <span className='instrument-font italic font-normal dark:text-white/70'>
-                  design excellence
+                  Education
                 </span>
               </h2>
             </div>
             <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-6'>
-              {achievementsList?.map((item:any, index:any) => {
+              {educationsList?.map((item:any, index:any) => {
                 return (
                   <motion.div {...bottomAnimation(index)} key={index}>
-                    <SingleAchievement achievements={item} />
+                    <SingleEducation achievements={item} />
                   </motion.div>
                 )
               })}
@@ -59,4 +59,4 @@ const ref = useRef<HTMLDivElement>(null)
   )
 }
 
-export default Achievements
+export default Educations

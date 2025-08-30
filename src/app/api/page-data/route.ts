@@ -5,7 +5,7 @@ import {
   onlinePresence,
   WebResultTag,
   techStack,
-  achievements,
+  educations,
 } from '@/app/types/menu'
 
 const techIconList: techIcon[] = [
@@ -203,17 +203,7 @@ const techStackList: techStack[] = [
     darkImg: '/images/home/techStack/css-darkicon.svg',
     title: 'CSS',
   },
-  {
-    image: '/images/home/techStack/shopify.svg',
-    darkImg: '/images/home/techStack/shopify-darkicon.svg',
-    title: 'Shopify',
-  },
-  {
-    image: '/images/home/techStack/wordpress.svg',
-    darkImg: '/images/home/techStack/wordpress-darkicon.svg',
-    title: 'WordPress',
-  },
-  {
+   {
     image: '/images/home/techStack/googlecloud.svg',
     darkImg: '/images/home/techStack/googlecloud-darkicon.svg',
     title: 'Google Cloud',
@@ -238,34 +228,41 @@ const techStackList: techStack[] = [
     darkImg: '/images/home/techStack/graphql-darkicon.svg',
     title: 'GraphQL',
   },
+  {
+    image: '/images/home/techStack/shopify.svg',
+    darkImg: '/images/home/techStack/shopify-darkicon.svg',
+    title: 'Shopify',
+  },
+  {
+    image: '/images/home/techStack/wordpress.svg',
+    darkImg: '/images/home/techStack/wordpress-darkicon.svg',
+    title: 'WordPress',
+  },
 ]
 
-const achievementsList: achievements[] = [
+const educationsList: educations[] = [
   {
     icon: '/images/home/achievement/framer_award.svg',
     dark_icon: '/images/home/achievement/dark_framer_award.svg',
-    sub_title: 'Framer Awards',
+    sub_title: 'Pondicherry University, Puducherry, India',
     title:
-      'Celebrated for cutting-edge interaction design and seamless user experiences.',
-    year: '2024',
-    url: 'https://www.framer.com/@wrap-pixel/',
+      'MBA (Information Technology)',
+    year: '2022',
   },
   {
     icon: '/images/home/achievement/dribble_award.svg',
     dark_icon: '/images/home/achievement/dribble_award.svg',
-    sub_title: 'Dribbble Awards',
-    title: 'Recognized for creative excellence and innovative design solutions',
-    year: '2023',
-    url: 'https://www.framer.com/@wrap-pixel/',
+    sub_title: 'Patna University, Bihar, India',
+    title: 'BCA (Computer Science)',
+    year: '2018',
   },
   {
     icon: '/images/home/achievement/awward_award.svg',
     dark_icon: '/images/home/achievement/dark_awward_award.svg',
-    sub_title: 'awwwards Awards',
+    sub_title: 'State Board of Bihar, India',
     title:
-      'Honored with the Best Website Design for creativity, usability, and innovation.',
-    year: '2022',
-    url: 'https://www.framer.com/@wrap-pixel/',
+      'Higher & Senior Secondary',
+    year: '2012, 2015',
   },
 ]
 
@@ -277,6 +274,6 @@ export const GET = async () => {
     onlinePresenceList,
     WebResultTagList,
     techStackList,
-    achievementsList,
+    educationsList,
   });
 };

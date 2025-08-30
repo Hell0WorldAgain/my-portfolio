@@ -32,7 +32,7 @@ function OnlinePresence() {
                 Building dynamic, scalable 
                 <span className='instrument-font italic font-normal dark:text-white/70'>
                   {' '}
-                  software experiencesś
+                  software experiencess
                 </span>
               </h2>
             </div>

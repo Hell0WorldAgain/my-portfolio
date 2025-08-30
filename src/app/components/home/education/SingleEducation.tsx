@@ -9,7 +9,6 @@ const SingleAchievement = ({
   const { url, icon, dark_icon, sub_title, title, year } = achievements
 
   return (
-    <Link href={url} target='_blank'>
       <div className='group flex flex-col gap-11 xl:gap-16 border border-dark_black/10 p-6 2xl:p-10 rounded-2xl dark:bg-white/5'>
         <div>
           <Image
@@ -33,7 +32,6 @@ const SingleAchievement = ({
         </div>
         <p>{year}</p>
       </div>
-    </Link>
   )
 }
 
