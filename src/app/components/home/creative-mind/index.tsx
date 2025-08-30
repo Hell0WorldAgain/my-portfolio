@@ -1,49 +1,49 @@
-import React from "react";
+'use client'
+import { useRef, useState } from 'react'
+import { motion, useInView } from 'framer-motion'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
-const ImageBox = () => {
-  return (
-    <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
-      {/* Left Image */}
-      <div className="md:w-1/2">
-        <img
-          src="/images/home/creative/creative_img_1.png"
-          alt="Sample"
-          className="w-full h-full object-cover"
-        />
-      </div>
 
-      {/* Right Content */}
-      <div className="md:w-1/2 flex flex-col justify-between p-6">
-        <div>
-          <h2 className="text-2xl font-bold text-gray-800 mb-3">
-            About Me
-          </h2>
-          <p className="text-gray-600 leading-relaxed">
-            Hi! I'm Abhishek, a Frontend Developer with practical experience in creating high-performance, scalable, and responsive web applications.
-            <br/><br/>
-            Skilled in modern web technologies and frameworks, I actively broaden my expertise to remain ahead in the ever-evolving tech landscape. I excel in team-oriented settings and am always eager to take on new challenges.
-          </p>
-        </div>
+function AboutMe() {
+const ref = useRef<HTMLDivElement>(null)
+  const inView = useInView(ref)
+  const [AboutMe, setAboutMe] = useState<any>(null);
 
-        {/* Social Icons */}
-        <div className="flex space-x-4 mt-6">
-          <a href="#" className="text-gray-600 hover:text-blue-600 text-xl">
-            <FaFacebookF />
-          </a>
-          <a href="#" className="text-gray-600 hover:text-sky-500 text-xl">
-            <FaTwitter />
-          </a>
-          <a href="#" className="text-gray-600 hover:text-blue-700 text-xl">
-            <FaLinkedinIn />
-          </a>
-          <a href="#" className="text-gray-600 hover:text-pink-600 text-xl">
-            <FaInstagram />
-          </a>
+  const bottomAnimation = (index: any) => ({
+    initial: { y: '5%', opacity: 0 },
+    animate: inView ? { y: 0, opacity: 1 } : { y: '10%', opacity: 0 },
+    transition: { duration: 0.4, delay: 0.4 + index * 0.3 },
+  })
+
+  return(
+    <section id='creative-mind'>
+      <div ref={ref} className='2xl:py-20 py-11'>
+        <div className='container'>
+          <div className='flex flex-col justify-center items-center gap-10 md:gap-20'>
+            <div className='grid md:grid-cols-2 gap-x-6 gap-y-8'>
+              <div className='group flex flex-col gap-6'>
+                <div className="relative"> 
+                   <img
+                    src="/images/home/creative/abhi-with-srk.png"
+                    alt="Bio Image"
+                    className="w-md h-sm object-cover"
+                    />
+                </div>
+              </div>
+              <div className='max-w-xl text-left flex items-center'>
+                <h4 className='group-hover:text-purple_blue'>About Me</h4>
+                <p className='mt-6 text-gray-600 leading-relaxed'>
+                  Hi! I'm Abhishek, a Frontend Developer with practical experience in creating high-performance, scalable, and responsive web applications.
+                  <br/><br/>
+                  Skilled in modern web technologies and frameworks, I actively broaden my expertise to remain ahead in the ever-evolving tech landscape. I excel in team-oriented settings and am always eager to take on new challenges.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
+    </section>
+  )
 
-export default ImageBox;
+}
+
+export default AboutMe
