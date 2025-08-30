@@ -213,6 +213,31 @@ const techStackList: techStack[] = [
     darkImg: '/images/home/techStack/wordpress-darkicon.svg',
     title: 'WordPress',
   },
+  {
+    image: '/images/home/techStack/googlecloud.svg',
+    darkImg: '/images/home/techStack/googlecloud-darkicon.svg',
+    title: 'Google Cloud',
+  },
+  {
+    image: '/images/home/techStack/vscode.svg',
+    darkImg: '/images/home/techStack/vscode-darkicon.svg',
+    title: 'VS Code',
+  },
+  {
+    image: '/images/home/techStack/firebase.svg',
+    darkImg: '/images/home/techStack/firebase-darkicon.svg',
+    title: 'Firebase',
+  },
+  {
+    image: '/images/home/techStack/postmanapi.svg',
+    darkImg: '/images/home/techStack/postmanapi-darkicon.svg',
+    title: 'Postman API',
+  },
+  {
+    image: '/images/home/techStack/graphql.svg',
+    darkImg: '/images/home/techStack/graphql-darkicon.svg',
+    title: 'GraphQL',
+  },
 ]
 
 const achievementsList: achievements[] = [

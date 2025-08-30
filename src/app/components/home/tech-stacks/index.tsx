@@ -22,22 +22,21 @@ function TechStack() {
   }, [])
 
   // Example: Choose which icons to show in each section by index or by filtering
-  const frontendIcons = techStackList.filter(item =>
-    ['React JS', 'Next JS', 'Tailwind CSS', 'JavaScript', 'TypeScript', 'HTML', 'CSS'].includes(item.title)
+  const languageIcons = techStackList.filter(item =>
+    ['React JS', 'Next JS', 'Tailwind CSS', 'PHP', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'GraphQL'].includes(item.title)
   );
-  const backendIcons = techStackList.filter(item =>
-    ['PHP', 'GitHub', 'AWS', 'Shopify', 'WordPress'].includes(item.title)
+  const toolsIcons = techStackList.filter(item =>
+    ['GitHub', 'AWS', 'Google Cloud', 'Firebase', 'Postman API', 'Shopify', 'WordPress', 'VS Code'].includes(item.title)
   );
 
   return (
     <section>
       <div className="container 2xl:py-20 py-11">
         <div className="grid md:grid-cols-2 gap-10">
-          {/* Frontend & UI Column */}
           <div className="bg-pale-yellow dark:bg-white/5 rounded-2xl p-8 min-h-[350px] flex flex-col items-center shadow-md">
-            <h3 className="text-2xl font-bold mb-6 text-dark_black dark:text-white">Frontend & UI</h3>
+            <h3 className="text-2xl font-bold mb-6 text-dark_black dark:text-white">Languages, Frameworks & Libraries</h3>
             <div className="grid grid-cols-3 gap-8 w-full justify-items-center">
-              {frontendIcons.map((item: any, idx: number) => (
+              {languageIcons.map((item: any, idx: number) => (
                 <div key={idx} className="flex flex-col items-center gap-2">
                   <Image
                     src={item.image}
@@ -53,16 +52,14 @@ function TechStack() {
                     height={48}
                     className="object-contain hidden dark:block"
                   />
-                  <span className="text-xs text-dark_black dark:text-white text-center">{item.title}</span>
                 </div>
               ))}
             </div>
           </div>
-          {/* Backend & Tools Column */}
           <div className="bg-blue-50 dark:bg-blue-950 rounded-2xl p-8 min-h-[350px] flex flex-col items-center shadow-md">
-            <h3 className="text-2xl font-bold mb-6 text-dark_black dark:text-white">Backend & Tools</h3>
+            <h3 className="text-2xl font-bold mb-6 text-dark_black dark:text-white">Tools & Platforms</h3>
             <div className="grid grid-cols-3 gap-8 w-full justify-items-center">
-              {backendIcons.map((item: any, idx: number) => (
+              {toolsIcons.map((item: any, idx: number) => (
                 <div key={idx} className="flex flex-col items-center gap-2">
                   <Image
                     src={item.image}
@@ -78,8 +75,7 @@ function TechStack() {
                     height={48}
                     className="object-contain hidden dark:block"
                   />
-                  <span className="text-xs text-dark_black dark:text-white text-center">{item.title}</span>
-                </div>
+                  </div>
               ))}
             </div>
           </div>
