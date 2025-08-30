@@ -4,10 +4,10 @@ import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 
-function Innovation() {
+function Expertise() {
   const ref = useRef(null)
   const inView = useInView(ref)
-   const [innovationList, setinnovationList] = useState<any>(null);
+   const [expertiseList, setexpertiseList] = useState<any>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,7 +16,7 @@ function Innovation() {
         if (!res.ok) throw new Error('Failed to fetch')
 
         const data = await res.json()
-        setinnovationList(data?.innovationList)
+        setexpertiseList(data?.expertiseList)
       } catch (error) {
         console.error('Error fetching services:', error)
       }
@@ -31,7 +31,7 @@ function Innovation() {
     transition: { duration: 0.3, delay: 0.3 + index * 0.3 },
   })
   return (
-    <section id='services'>
+    <section id='expertise'>
       <div ref={ref} className='2xl:py-20 py-11'>
         <div className='container'>
           <div className='flex flex-col gap-12'>
@@ -49,7 +49,7 @@ function Innovation() {
               <motion.div
                 {...bottomAnimation(2)}
                 className='grid auto-rows-max grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 w-full'>
-                {innovationList?.map((items:any, index:any) => {
+                {expertiseList?.map((items:any, index:any) => {
                   return (
                     <div
                       key={index}
@@ -84,38 +84,9 @@ function Innovation() {
                 See my Work in Action.
               </h4>
               <div className='flex flex-col sm:flex-row gap-3 items-center'>
-                {/* <Link
-                  href='/contact'
-                  className='group gap-2 text-dark_black font-medium bg-white rounded-full flex items-center lg:gap-4 py-2 pl-5 pr-2 border border-white dark:border-opacity-50 hover:bg-transparent hover:text-white transition-all duration-200 ease-in-out'>
-                  <span className='group-hover:translate-x-9 transform transition-transform duration-200 ease-in-out'>
-                    Let’s Collaborate
-                  </span>
-                  <svg
-                    width='32'
-                    height='32'
-                    viewBox='0 0 32 32'
-                    fill='none'
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='group-hover:-translate-x-36 transition-all duration-200 ease-in-out'>
-                    <rect
-                      width='32'
-                      height='32'
-                      rx='16'
-                      fill='#1B1D1E'
-                      className=' transition-colors duration-200 ease-in-out group-hover:fill-white'
-                    />
-                    <path
-                      d='M11.832 11.3335H20.1654M20.1654 11.3335V19.6668M20.1654 11.3335L11.832 19.6668'
-                      stroke='white'
-                      strokeWidth='1.42857'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      className='group-hover:stroke-black'
-                    />
-                  </svg>
-                </Link> */}
+
                 <Link
-                  href='/#work'
+                  href='/#projects'
                   className='group border border-white dark:border-white/50 text-white font-medium bg-dark_black gap-2 rounded-full flex items-center justify-between lg:gap-4 py-2 pl-5 pr-2 hover:opacity-95 hover:bg-transparent hover:text-white transition-all duration-200 ease-in-out'>
                   <span className='group-hover:translate-x-9 transform transition-transform duration-200 ease-in-out'>
                     View Portfolio
@@ -146,4 +117,4 @@ function Innovation() {
   )
 }
 
-export default Innovation
+export default Expertise

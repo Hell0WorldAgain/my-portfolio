@@ -4,8 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
-function OnlinePresence() {
-  const [onlinePresenceList, setonlinePresenceList] = useState<any>(null);
+function Projects() {
+  const [projectsList, setprojectsList] = useState<any>(null);
 
   useEffect(() => {
       const fetchData = async () => {
@@ -14,7 +14,7 @@ function OnlinePresence() {
           if (!res.ok) throw new Error('Failed to fetch')
   
           const data = await res.json()
-          setonlinePresenceList(data?.onlinePresenceList)
+          setprojectsList(data?.projectsList)
         } catch (error) {
           console.error('Error fetching services:', error)
         }
@@ -23,7 +23,7 @@ function OnlinePresence() {
       fetchData()
     }, [])
   return (
-    <section id='work'>
+    <section id='projects'>
       <div className='2xl:py-20 py-11'>
         <div className='container'>
           <div className='flex flex-col justify-center items-center gap-10 md:gap-20'>
@@ -37,7 +37,7 @@ function OnlinePresence() {
               </h2>
             </div>
             <div className='grid md:grid-cols-2 gap-x-6 gap-y-8'>
-              {onlinePresenceList?.map((items:any, index:any) => {
+              {projectsList?.map((items:any, index:any) => {
                 return (
                   <div
                     key={index}
@@ -93,4 +93,4 @@ function OnlinePresence() {
   )
 }
 
-export default OnlinePresence
+export default Projects

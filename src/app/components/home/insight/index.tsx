@@ -4,7 +4,7 @@ import CountUp from 'react-countup'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
 
-function WebResult() {
+function Insight() {
   const [data, setData] = useState<any>(null);
 
   const { ref, inView } = useInView({
@@ -19,7 +19,7 @@ function WebResult() {
         if (!res.ok) throw new Error('Failed to fetch')
 
         const data = await res.json()
-        setData(data?.WebResultTagList)
+        setData(data?.insightTagList)
       } catch (error) {
         console.error('Error fetching services:', error)
       }
@@ -29,7 +29,7 @@ function WebResult() {
   }, [])
 
   return (
-    <section id='aboutus'>
+    <section id='insight'>
       <div className='2xl:py-20 py-11'>
         <div className='container'>
           <div className='flex flex-col  lg:gap-16 gap-5'>
@@ -82,7 +82,7 @@ function WebResult() {
               <div className='relative 2xl:px-24 px-16 md:py-8 py-4'>
                 <h2 className='2xl:text-9xl md:text-7xl text-5xl'>
                   <sup>+</sup>
-                  {inView ? <CountUp start={0} end={20} duration={3} /> : '0'}
+                  {inView ? <CountUp start={0} end={10} duration={3} /> : '0'}
                 </h2>
                 <p className='mt-2 text-dark_black/60 dark:text-white/60'>
                   Personal Projects
@@ -95,4 +95,4 @@ function WebResult() {
     </section>
   )
 }
-export default WebResult
+export default Insight

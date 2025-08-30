@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import AboutMe from "./components/home/about-me";
 import HeroSection from "./components/home/hero";
-import Innovation from "./components/home/innovation";
-import OnlinePresence from "./components/home/online-presence";
+import Expertise from "./components/home/expertise";
+import Projects from "./components/home/projects";
 import Collaborate from "./components/home/solution";
-import WebResult from "./components/home/web-result";
+import Insight from "./components/home/insight";
 import TechIcon from "./components/home/techIcons";
 import TechStack from "./components/home/tech-stacks";
 import Educations from "./components/home/education";
@@ -30,15 +30,11 @@ export default function Home() {
       {/* ---------------------Creative mind section Ends-----------------  */}
 
       {/* ---------------------Innovation section Starts-----------------  */}
-      <Innovation />
+      <Expertise />
       {/* ---------------------Innovation section Ends-----------------  */}
-      
-      {/* ---------------------Web result section Starts-----------------  */}
-      <WebResult />
-      {/* ---------------------Web result section Ends-----------------  */}
-
+    
       {/* ---------------------Online presence section Starts-----------------  */}
-      <OnlinePresence />
+      <Projects />
       {/* ---------------------Online presence section Ends-----------------  */}
 
       {/* ---------------------Education section Starts-----------------  */}
@@ -48,6 +44,10 @@ export default function Home() {
       {/* ---------------------Achievements section Starts-----------------  */}
       <Educations />
       {/* ---------------------Achievements section Ends-----------------  */}
+
+      {/* ---------------------Web result section Starts-----------------  */}
+      <Insight />
+      {/* ---------------------Web result section Ends-----------------  */}
 
       {/* ---------------------Connect section Starts-----------------  */}
       <Collaborate />

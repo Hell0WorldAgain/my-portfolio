@@ -1,10 +1,5 @@
 'use client'
-import Link from 'next/link'
-import { useEffect, useState } from 'react'
-import { signOut, useSession } from 'next-auth/react'
-import { Icon } from '@iconify/react/dist/iconify.js'
-import Image from 'next/image'
-import { usePathname } from 'next/navigation'
+import {useState } from 'react'
 import HeaderLink from './Navigation/HeaderLink'
 import { headerData } from './Navigation/Menudata'
 import Logo from './Logo'
@@ -12,32 +7,8 @@ import MobileHeader from './Navigation/MobileHeader'
 import ThemeToggler from './ThemeToggle'
 
 const Header = () => {
-  const { data: session } = useSession()
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  const [user, setUser] = useState<{ user: any } | null>(null)
-  const [sticky, setSticky] = useState(false)
-  const pathname = usePathname()
-
-  const handleScroll = () => {
-    setSticky(window.scrollY >= 80)
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    const storedUser = localStorage.getItem('user')
-    if (storedUser) {
-      setUser(JSON.parse(storedUser))
-    }
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [pathname])
-
-  const handleSignOut = () => {
-    localStorage.removeItem('user')
-    signOut()
-    setUser(null)
-  }
+  const [sticky] = useState(false)
 
   return (
     <>
@@ -60,11 +31,13 @@ const Header = () => {
               </ul>
             </div>
             <div className='flex items-center gap-1 xl:gap-4'>
-              <Link
-                href={'/contact'}
+              <a
+                href='/cv.pdf'
+                  download target="_blank"
+                  rel="noopener noreferrer"
                 className='hidden lg:block bg-transparent border border-dark_black dark:border-white/50 text-primary px-2.5 xl:px-4 py-2 rounded-full hover:bg-dark_black hover:text-white'>
-                Contact Me
-              </Link>
+                Download My CV
+              </a>
 
               {/* ---------------------Light/Dark Mode button-------------------- */}
               <ThemeToggler />
@@ -129,46 +102,13 @@ const Header = () => {
                 <MobileHeader key={index} item={item} />
               ))}
               <div className='flex flex-col items-center gap-3 px-2 mt-2'>
-                {user || session?.user ? (
-                  <>
-                    <button
-                      onClick={() => signOut()}
-                      className='flex w-full group font-normal items-center gap-2 transition-all duration-200 ease-in-out text-white dark:text-dark_black px-4 py-2 bg-dark_black rounded-md hover:text-dark_black hover:bg-white border border-dark_black'>
-                      Sign Out
-                      <Icon
-                        icon='solar:logout-outline'
-                        width='25'
-                        height='25'
-                      />
-                    </button>
-                    <div className='group flex gap-2 items-center w-full border border-dark_black dark:border-white px-4 py-2 rounded-md hover:bg-dark_black transition-all duration-200 ease-in-out'>
-                      <Image
-                        src='/images/home/avatar_1.jpg'
-                        alt='Image'
-                        width={25}
-                        height={25}
-                        quality={100}
-                        className='rounded-full cursor-pointer'
-                      />
-                      <p className='group-hover:text-white text-dark_black dark:text-white w-full capitalize'>
-                        {user?.user?.email || session?.user?.name}
-                      </p>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <Link
-                      href={'/signin'}
-                      className='w-full border border-dark_black dark:border-white text-primary px-4 py-2 rounded-md hover:bg-dark_black dark:hover:bg-white hover:text-white dark:hover:text-dark_black'>
-                      Sign In
-                    </Link>
-                    <Link
-                      href={'/signup'}
+                <a
+                      href='/cv.pdf'
+                      download target="_blank"
+                  rel="noopener noreferrer"
                       className='w-full text-white dark:text-dark_black px-4 py-2 bg-dark_black dark:bg-white rounded-md hover:opacity-90'>
-                      Sign Up
-                    </Link>
-                  </>
-                )}
+                      Download My CV
+                    </a>
               </div>
             </ul>
           </div>

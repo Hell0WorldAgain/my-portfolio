@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server'
 import {
   techIcon,
-  innovation,
-  onlinePresence,
-  WebResultTag,
+  expertise,
+  projects,
+  insightTag,
   techStack,
   educations,
 } from '@/app/types/menu'
@@ -71,7 +71,7 @@ const techIconList: techIcon[] = [
   },
 ]
 
-const innovationList: innovation[] = [
+const expertiseList: expertise[] = [
   {
     image: '/images/home/innovation/brand.svg',
     title: 'Frontend\nDevelopment',
@@ -80,7 +80,7 @@ const innovationList: innovation[] = [
   },
   {
     image: '/images/home/innovation/digitalmarketing.svg',
-    title: 'Web &\nDevelopment',
+    title: 'Web Development',
     bg_color: 'bg-blue/20',
     txt_color: 'text-blue',
   },
@@ -98,13 +98,13 @@ const innovationList: innovation[] = [
   },
   {
     image: '/images/home/innovation/webdevp.svg',
-    title: 'Tools\nWorkflow',
+    title: 'Tools &\nWorkflow',
     bg_color: 'bg-pink/20',
     txt_color: 'text-pink',
   },
 ]
 
-const onlinePresenceList: onlinePresence[] = [
+const projectsList: projects[] = [
   {
     image: '/images/home/onlinePresence/online_img_1.png',
     title: 'IndiqueHair',
@@ -131,7 +131,7 @@ const onlinePresenceList: onlinePresence[] = [
   },
 ]
 
-const WebResultTagList: WebResultTag[] = [
+const insightTagList: insightTag[] = [
   {
     image: '/images/home/result/creativity.svg',
     name: 'Creativity',
@@ -270,9 +270,9 @@ const educationsList: educations[] = [
 export const GET = async () => {
   return NextResponse.json({
     techIconList,
-    innovationList,
-    onlinePresenceList,
-    WebResultTagList,
+    expertiseList,
+    projectsList,
+    insightTagList,
     techStackList,
     educationsList,
   });

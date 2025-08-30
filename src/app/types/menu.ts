@@ -14,21 +14,21 @@ export type techStack = {
   darkImg: string;
 };
 
-export type innovation = {
+export type expertise = {
   image: string;
   title: string;
   bg_color: string;
   txt_color: string;
 };
 
-export type onlinePresence = {
+export type projects = {
   image: string;
   title: string;
   tag: Array<string>;
   link: string;
 };
 
-export type WebResultTag = {
+export type insightTag = {
   image: string;
   name: string;
   bg_color: string;

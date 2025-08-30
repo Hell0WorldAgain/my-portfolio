@@ -15,7 +15,7 @@ const isInView = useInView(ref, { once: true });
   })
 
   return(
-    <section id='about-me'>
+    <section id='aboutme'>
       <div ref={ref} className='2xl:py-20 py-11'>
         <div className='container'>
             <div className='grid md:grid-cols-2 gap-x-6 gap-y-8 justify-center'>

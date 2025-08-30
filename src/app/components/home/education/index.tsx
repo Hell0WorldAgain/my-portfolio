@@ -31,7 +31,7 @@ const ref = useRef<HTMLDivElement>(null)
   })
 
   return (
-    <section id='awards'>
+    <section id='education'>
       <div ref={ref} className='2xl:py-20 py-11'>
         <div className='container'>
           <div className='flex flex-col gap-10 md:gap-20'>

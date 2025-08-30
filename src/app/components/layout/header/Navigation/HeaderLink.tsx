@@ -4,9 +4,8 @@ import { HeaderItem } from '../../../../types/menu'
 import { usePathname, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 
-const OFFSET = 80 // Adjust this value based on your fixed header height
+const OFFSET = 80
 
-// Hook to manage the active link and apply offset
 const useActiveLink = (setActiveLink: (link: string) => void) => {
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -49,7 +48,6 @@ const useActiveLink = (setActiveLink: (link: string) => void) => {
   }, [pathname, searchParams, setActiveLink])
 }
 
-// HeaderLink component
 const HeaderLinkContent: React.FC<{ item: HeaderItem }> = ({ item }) => {
   const [activeLink, setActiveLink] = useState('')
 
