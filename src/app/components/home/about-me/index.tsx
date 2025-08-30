@@ -26,7 +26,7 @@ const ref = useRef<HTMLDivElement>(null)
                    <img
                     src="/images/home/creative/abhi-with-srk.png"
                     alt="Bio Image"
-                    className="w-md h-sm object-cover"
+                    className="w-md object-cover rounded-2xl"
                     />
                 </div>
               </div>

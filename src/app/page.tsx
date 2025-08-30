@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Achievements from "./components/home/achievements";
 import Brand from "./components/home/brand";
-import CreativeMind from "./components/home/creative-mind";
+import AboutMe from "./components/home/about-me";
 import CustomerStories from "./components/home/customer-stories";
 import Faq from "./components/home/faq";
 import HeroSection from "./components/home/hero";
@@ -28,7 +28,7 @@ export default function Home() {
       {/* ---------------------Brand logo section Ends-----------------  */}
 
         {/* ---------------------Creative mind section Starts-----------------  */}
-      <CreativeMind />
+      <AboutMe />
       {/* ---------------------Creative mind section Ends-----------------  */}
 
       {/* ---------------------Innovation section Starts-----------------  */}
