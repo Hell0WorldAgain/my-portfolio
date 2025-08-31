@@ -21,33 +21,29 @@ export default function Home() {
       <HeroSection />
       {/* ---------------------Hero section Ends-----------------  */}
 
-      {/* ---------------------Brand logo section Starts-----------------  */}
+      {/* ---------------------Tech Icons section Starts-----------------  */}
       <TechIcon />
-      {/* ---------------------Brand logo section Ends-----------------  */}
+      {/* ---------------------Tech Icons section Ends-----------------  */}
 
-      {/* ---------------------Creative mind section Starts-----------------  */}
+      {/* ---------------------About Me section Starts-----------------  */}
       <AboutMe />
-      {/* ---------------------Creative mind section Ends-----------------  */}
+      {/* ---------------------About Me section Ends-----------------  */}
 
-      {/* ---------------------Innovation section Starts-----------------  */}
+      {/* ---------------------Expertise section Starts-----------------  */}
       <Expertise />
-      {/* ---------------------Innovation section Ends-----------------  */}
-    
-      {/* ---------------------Online presence section Starts-----------------  */}
-      <Projects />
-      {/* ---------------------Online presence section Ends-----------------  */}
-
-      {/* ---------------------Education section Starts-----------------  */}
+      {/* ---------------------Expertise section Ends-----------------  */}
+      
+      {/* ---------------------Tech Stack section Starts-----------------  */}
       <TechStack />
-      {/* ---------------------Education section Ends-----------------  */}
+      {/* ---------------------Tech Stack section Ends-----------------  */}
+    
+      {/* ---------------------Projects section Starts-----------------  */}
+      <Projects />
+      {/* ---------------------Projects section Ends-----------------  */}
 
-      {/* ---------------------Achievements section Starts-----------------  */}
-      <Educations />
-      {/* ---------------------Achievements section Ends-----------------  */}
-
-      {/* ---------------------Web result section Starts-----------------  */}
+      {/* ---------------------Insight section Starts-----------------  */}
       <Insight />
-      {/* ---------------------Web result section Ends-----------------  */}
+      {/* ---------------------Insight section Ends-----------------  */}
 
       {/* ---------------------Connect section Starts-----------------  */}
       <Collaborate />
