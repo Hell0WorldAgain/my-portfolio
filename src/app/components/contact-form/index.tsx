@@ -128,7 +128,7 @@ function ContactForm() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder='Enter your name'
-                      required
+                      required autoComplete='name' aria-live="polite"
                     />
                     {errors.name && <span className="text-red-500 text-xs">{errors.name}</span>}
                   </div>
@@ -142,8 +142,8 @@ function ContactForm() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder='Enter your email'
-                      required
-                    />
+                      required autoComplete='email' aria-live="polite"
+                    /> 
                     {errors.email && <span className="text-red-500 text-xs">{errors.email}</span>}
                   </div>
                 </div>
@@ -158,7 +158,7 @@ function ContactForm() {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder='Enter your contact number'
-                      required
+                      required autoComplete='tel' aria-live="polite"
                     />
                     {errors.phone && <span className="text-red-500 text-xs">{errors.phone}</span>}
                   </div>
@@ -170,7 +170,7 @@ function ContactForm() {
                         id='purpose'
                         value={formData.purpose}
                         onChange={handleChange}
-                          required
+                          required aria-live="polite"
                       >
                         <option value='' disabled hidden>Select your purpose</option>
                         <option value='Hire'>Hire for fulltime/contact</option>
@@ -189,6 +189,8 @@ function ContactForm() {
                     onChange={handleChange}
                     placeholder='Share more details about it..'
                     rows={4}
+                    autoComplete='message'
+                    aria-live="polite"
                   />
                   {errors.message && <span className="text-red-500 text-xs">{errors.message}</span>}
                 </div>

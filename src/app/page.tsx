@@ -7,7 +7,6 @@ import Collaborate from "./components/home/solution";
 import Insight from "./components/home/insight";
 import TechIcon from "./components/home/techIcons";
 import TechStack from "./components/home/tech-stacks";
-import Educations from "./components/home/education";
 
 export const metadata: Metadata = {
     title: "Abhishek Choudhary - Portfolio",

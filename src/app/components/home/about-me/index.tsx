@@ -1,6 +1,7 @@
 'use client'
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
+import Image from "next/image";
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 
 
@@ -22,10 +23,12 @@ const isInView = useInView(ref, { once: true });
               <div className='flex items-center flex-col gap-6'>
                 <motion.div
                   {...bottomAnimation(0)} className="relative"> 
-                   <img
+                   <Image
                     src="/images/home/abhi-with-srk.png"
                     alt="Bio Image"
                     className="w-md object-cover rounded-2xl"
+                    width={400}
+                    height={600}
                     />
                 </motion.div>
               </div>

@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 const footerData = {
     brand: {
         name: "Awake",
-        tagline: "Empowering businesses with innovative solutions. Let's create something amazing together.",
+        tagline: " Love technologies to work on and create awesome projects.",
         socialLinks: [
             {
                 icon: "/images/home/footerSocialIcon/linkedin.svg",
@@ -20,35 +20,20 @@ const footerData = {
                 dark_icon: "/images/home/footerSocialIcon/instagram_dark.svg",
                 link: "https://www.instagram.com/_naadaan.parinda_/"
             },
-            // {
-            //     icon: "/images/home/footerSocialIcon/twitter.svg",
-            //     dark_icon: "/images/home/footerSocialIcon/twitter_dark.svg",
-            //     link: "https://twitter.com"
-            // }
         ]
     },
     sitemap: {
         name: "Sitemap",
         links: [
-            { name: "Contact us", url: "/contact" },
-            { name: "About us", url: "/#aboutus" },
-            { name: "Work", url: "/#work" },
-            { name: "Services", url: "/#services" },
-            { name: "Pricing", url: "/#pricing" }
+            { name: "Contact me", url: "/contact" },
+            { name: "About", url: "/#aboutme" },
+            { name: "Projects", url: "/#projects" },
+            { name: "Skills", url: "/#techstack" },
         ]
     },
-    // otherPages: {
-    //     name: "Other Pages",
-    //     links: [
-    //         { name: "Error 404", url: "/not-found" },
-    //         { name: "Terms & Conditions", url: "/terms-and-conditions" },
-    //         { name: "Privacy Policy", url: "/privacy-policy" },
-    //         { name: "Documentation", url: "/documentation" }
-    //     ]
-    // },
     contactDetails: {
         name:"Contact Details",
-        address: "Chattarpur, New Delhi, India",
+        address: "New Delhi, India",
         email: "corporateabhishek47@gmail.com",
         phone: "+91 997-303-9047"
     },

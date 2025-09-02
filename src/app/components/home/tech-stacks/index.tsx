@@ -60,7 +60,7 @@ const iconVariants: Variants = {
             </span>
           </h2>
         </div>
-        <div ref={ref} className="grid md:grid-cols-2 gap-x-6 gap-y-8 justify-center">
+        <div ref={ref} className="grid md:grid-cols-2 gap-x-6 gap-y-8">
           <div className="bg-pale-yellow dark:bg-white/5 rounded-2xl p-8 min-h-[350px] flex flex-col items-center shadow-md">
             <h3 className="text-2xl font-bold mb-6 text-dark_black dark:text-white">Languages, & Libraries</h3>
             <div className="grid grid-cols-3 gap-8 w-full justify-items-center">

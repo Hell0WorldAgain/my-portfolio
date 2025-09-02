@@ -34,11 +34,3 @@ export type insightTag = {
   bg_color: string;
   txt_color: string;
 }
-
-export type educations = {
-  icon: string;
-  sub_title: string;
-  dark_icon: string;
-  title: string;
-  year: string;
-}

@@ -5,7 +5,6 @@ import {
   projects,
   insightTag,
   techStack,
-  educations,
 } from '@/app/types/menu'
 
 const techIconList: techIcon[] = [
@@ -240,32 +239,6 @@ const techStackList: techStack[] = [
   },
 ]
 
-const educationsList: educations[] = [
-  {
-    icon: '/images/home/education/college.svg',
-    dark_icon: '/images/home/education/college-dark.svg',
-    sub_title: 'Pondicherry University, Puducherry, India',
-    title:
-      'MBA (Information Technology)',
-    year: '2022',
-  },
-  {
-    icon: '/images/home/education/college.svg',
-    dark_icon: '/images/home/education/college-dark.svg',
-    sub_title: 'Patna University, Bihar, India',
-    title: 'BCA (Computer Science)',
-    year: '2018',
-  },
-  {
-    icon: '/images/home/education/college.svg',
-    dark_icon: '/images/home/education/college-dark.svg',
-    sub_title: 'State Board of Bihar, India',
-    title:
-      'Higher & Senior Secondary',
-    year: '2012, 2015',
-  },
-]
-
 
 export const GET = async () => {
   return NextResponse.json({
@@ -274,6 +247,5 @@ export const GET = async () => {
     projectsList,
     insightTagList,
     techStackList,
-    educationsList,
   });
 };
